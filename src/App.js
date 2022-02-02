@@ -6,6 +6,8 @@ const App = () => {
 
   const getClass = async () => {
     const url = process.env.REACT_APP_BACKEND_URL;
+    console.log(process.env.NODE_ENV);
+    console.log(url);
 
     try {
       const request = await axios({
